@@ -1,23 +1,20 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Counter from './Counter'
+
+const counterStyle = {
+  color: 'black',
+  backgroundImage: 'url(' + 'https://vignette.wikia.nocookie.net/muppet/images/2/2e/Count8Song.jpg/revision/latest?cb=20130528223217' + ')'
+}
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Counter step={1} />
+        <Counter step={3} />
+        <Counter step={50} />
       </header>
     </div>
   );
